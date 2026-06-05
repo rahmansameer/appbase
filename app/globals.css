@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0150ff;
+  --color-primary-hover: #003fcc;
+  --color-primary-soft: #e6eeff;
+  --color-primary-border: #b3ccff;
+
+  --color-gray-50: #f8f9fb;
+  --color-gray-100: #f1f3f5;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --color-background: #ffffff;
+  --color-surface: var(--color-gray-50);
+  --color-border: var(--color-gray-200);
+
+  --color-text: var(--color-gray-900);
+  --color-text-muted: var(--color-gray-500);
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-poppins);
+}
+
+.font-secondary {
+  font-family: var(--font-inter);
+}
+
+.container-custom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.float-delay-1 {
+  animation-delay: 1s;
+}
+
+.float-delay-2 {
+  animation-delay: 2s;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
